@@ -1,0 +1,30 @@
+{
+  "name": "tarballer-server",
+  "version": "0.0.1",
+  "description": "Server for storing node_modules tarballs",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "upload": "node src/uploader",
+    "download": "node src/downloader"
+  },
+  "author": "Ben Sidelinger",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.5.3",
+    "connect-busboy": "0.0.2",
+    "express": "^4.14.0",
+    "node-uuid": "^1.4.7",
+    "request": "^2.74.0",
+    "tar": "^2.2.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "eslint": "^3.4.0",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-plugin-import": "^1.14.0",
+    "eslint-plugin-jsx-a11y": "^2.2.0",
+    "eslint-plugin-react": "^6.2.0"
+  }
+}
